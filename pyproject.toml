@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "clang-tidy-precommit-hook"
+version = "0.1.0"
+description = "Configurable pre-commit hook to run clang-tidy with CMake-generated compile_commands.json"
+readme = "README.md"
+requires-python = ">=3.8"
+authors = [{name = "Your Name"}]
+license = {text = "MIT"}
+classifiers = [
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12"
+]
+
+[project.urls]
+Homepage = "https://example.com/clang-tidy-precommit-hook"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project.scripts]
+clang-tidy-precommit = "clang_tidy_precommit.cli:main"

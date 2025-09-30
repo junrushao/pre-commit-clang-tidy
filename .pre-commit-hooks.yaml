@@ -1,0 +1,9 @@
+-   id: clang-tidy-cmake
+    name: clang-tidy (with CMake compile_commands.json)
+    description: "Run clang-tidy against staged C/C++ sources using a configurable CMake build directory and checks."
+    entry: clang-tidy-precommit
+    language: python
+    types: [c, c++]
+    require_serial: false
+    pass_filenames: true
+    minimum_pre_commit_version: "3.0.0"

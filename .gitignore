@@ -1,0 +1,15 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+.build/
+dist/
+*.egg-info/
+
+# CMake build dirs (example)
+build/
+out/
+cmake-build-*/
+compile_commands.json
